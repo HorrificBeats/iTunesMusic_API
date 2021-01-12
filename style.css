@@ -1,142 +1,134 @@
 body {
-  margin-left: 15% ;
-  margin-right: 15% ;
-  background-color: khaki;
-}
-
-#title {
-  background: -webkit-linear-gradient(rgb(252, 100, 100), rgb(103, 108, 245));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 55px;
-  text-decoration-line: none;
-  text-shadow:rgb(103, 108, 245) ;
-}
-
-input {
-  width:28%;
-  padding :5px;
-  background-color: rgb(103, 108, 245);
-  color:khaki;
-  border-radius: 5px;
-  border-color: rgb(103, 108, 245);
-  box-shadow: rgba(0, 0, 0, 0.934);
-  height: 20px;
-  font-size: 15px;
-}
-
-::placeholder {
-  color: rgb(187, 187, 187);
+  margin-left: 15%;
+  margin-right: 15%;
+  background: #f9f0a7;
+  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
 }
 
 
-#nrresult {
-  color: blueviolet;
-}
+/* NAV */
+  #title {
+    background: -webkit-linear-gradient(rgb(252, 100, 100), rgb(103, 108, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    text-decoration-line: none;
+    text-shadow: rgb(103, 108, 245);
+    transition: 1s ease-in;
+  }
+
+  input {
+    width: 48.5%;
+    padding: 5px;
+    background-color: rgb(103, 108, 245);
+    color: khaki;
+    border-radius: 5px;
+    border-color: #676cf5;
+    box-shadow: rgba(0, 0, 0, 0.934);
+    height: 20px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    color: rgb(187, 187, 187);
+  }
 
 
-hr {
-  height: 1px;
-background-color: rgb(0, 0, 0);
-border: none;
-}
+/* MAIN */
+  #nrresult {
+    color: blueviolet;
+  }
 
-.padre {
-  background-color: rgba(103, 108, 245, 0.735);
-  margin-top: 5px;
-  display:flex;
-  justify-content: flex-start;
-  color:white;
-  border-radius: 5px;
-  padding:5px;
-  transition-duration: 0.3s;
-}
+  hr {
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+  }
 
+  .padre {
+    background-color: rgba(103, 108, 245, 0.735);
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition-duration: 0.3s;
+  }
 
-.figlio {
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-left: 10px;
-  width:79%;
-}
+  .figlio {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 84.5%;
+  }
 
-.figlio2 {
-  align-content: flex-end;
-  margin-left: 200;
-  margin-right:0;
-}
+  .artist {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+  }
 
-.artist {
-  font-weight: bold;
-  font-size: larger;
-  text-decoration: none;
-  color: white;
-}
+  .album {
+    font-style: italic;
+    font-size: large;
+  }
 
-.album {
-  font-style: italic;
-  font-size: large;
-}
+  .track {
+    font-size: medium;
+  }
 
-.track {
-  font-size: medium;
-}
+  .genre {
+    text-align: right;
+  }
 
-.genre {
- text-align: right;
-}
+  .duration {
+    text-align: right;
+  }
 
-.duration {
-  text-align: right;
-}
+  .trackCount {
+    text-align: right;
+  }
 
-.trackCount {
-  text-align: right;
-}
+  .artwork {
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+  }
 
-.artwork {
-  border-radius: 5px;
-  height:100px;
-  width: 100px;
-}
+  .artworklink {
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+  }
 
-.artworklink {
-  border-radius: 5px;
-  height:100px;
-  width: 100px;
-}
-
-.player {
-width:15%;
-}
+  .player {
+    width: 15%;
+  }
 
 /* HOVERS */
+  .padre:hover {
+    background-color: rgb(103, 108, 245);
+    transition-duration: 0.3s;
+  }
 
-.padre:hover {
-  background-color: rgb(103, 108, 245);
-  transition-duration: 0.3s;
-}
+  #title:hover {
+    background: -webkit-linear-gradient(rgb(103, 108, 245), rgb(252, 100, 100));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-in;
+  }
 
-#title:hover {
-  background: -webkit-linear-gradient( rgb(103, 108, 245), rgb(252, 100, 100));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition-duration: 3s;
-  transition-timing-function: ease-in;
-  transition-delay: 3s;
-}
+  .artworklink:hover {
+    background-color: rgba(240, 230, 140, 0.589);
+  }
 
-.artworklink:hover {
-  background-color: rgba(240, 230, 140, 0.589);
-}
-
-.artist:hover {
-  font-weight: bolder;
-  font-size: larger;
-  text-decoration-line: underline;
-  color: khaki;
-  transition-duration: 0.5s;
-}
-
-
+  .artist:hover {
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration-line: underline;
+    color: khaki;
+    transition-duration: 0.5s;
+  }
