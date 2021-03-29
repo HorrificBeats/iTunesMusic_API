@@ -20,10 +20,10 @@ $(document).ready(function () {
         console.log(obj.resultCount);
 
         //Number of results
-		$("#nrresult").html(obj.resultCount + " artists found:");
+		    $("#nrresult").html(obj.resultCount + " artists found:");
 		
-		//Removing #initialText
-		document.getElementById("initialText").style.display = "none";
+		    //Removing #initialText
+		    document.getElementById("initialText").style.display = "none";
 
         obj.results.forEach(function (element, index) {
           console.log(index);
@@ -36,6 +36,7 @@ $(document).ready(function () {
           //Mini-Container for text/player
           var figlio = document.createElement("div");
           figlio.classList.add("figlio");
+          figlio.classList.add("text-truncate");
 
           //Mini-Container for text/player
           var figlio2 = document.createElement("div");
@@ -114,7 +115,7 @@ $(document).ready(function () {
   });
 //
 
-//Search a TRACK
+//Search TRACK
   $("#search2").keypress(function (event) {
     if (event.which == 13) {
       $("#results").html("");

@@ -1,12 +1,13 @@
 body {
-  margin-left: 15%;
-  margin-right: 15%;
-  background: #f9f0a7;
+  background: #e9d74d;
   background-image: url("https://www.transparenttextures.com/patterns/connected.png");
 }
 
-
 /* NAV */
+  nav{
+    border-bottom: 2px solid rgb(142, 142, 142);
+  }
+
   #title {
     background: -webkit-linear-gradient(rgb(252, 100, 100), rgb(103, 108, 245));
     -webkit-background-clip: text;
@@ -18,32 +19,35 @@ body {
   }
 
   input {
-    width: 48.5%;
+    width:100%;
     padding: 5px;
     background-color: rgb(103, 108, 245);
     color: khaki;
     border-radius: 5px;
     border-color: #676cf5;
-    box-shadow: rgba(0, 0, 0, 0.934);
-    height: 20px;
     font-size: 15px;
   }
 
-  ::placeholder {
+  #search::placeholder {
     color: rgb(187, 187, 187);
   }
 
 
 /* MAIN */
+  #initialText {
+    display: flex; 
+    justify-content:center;
+    margin-top: 5%;
+    font-weight:bold;
+    font-size: 4vh;
+    color: rgb(103, 108, 245);
+  }
+
   #nrresult {
     color: blueviolet;
   }
 
-  hr {
-    height: 1px;
-    background-color: rgb(0, 0, 0);
-    border: none;
-  }
+  
 
   .padre {
     background-color: rgba(103, 108, 245, 0.735);
@@ -52,7 +56,6 @@ body {
     justify-content: flex-start;
     color: white;
     border-radius: 5px;
-    padding: 5px;
     transition-duration: 0.3s;
   }
 
@@ -93,14 +96,14 @@ body {
 
   .artwork {
     border-radius: 5px;
-    height: 100px;
-    width: 100px;
   }
 
   .artworklink {
     border-radius: 5px;
     height: 100px;
     width: 100px;
+    margin-top: 9px;
+    margin-left: 5px;
   }
 
   .player {
